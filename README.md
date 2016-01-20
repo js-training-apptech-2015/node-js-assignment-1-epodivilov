@@ -15,6 +15,7 @@ In this task, implement a proxy backend that
 - balances the load by choosing a new endpoint everytime (e.g. using [RR](https://en.wikipedia.org/wiki/Round-robin_scheduling))
 - wraps original responses into an object and provides information on which of the original endpoints was used
 - in case the current original endpoint fails to respond, the proxy should automatically use another one and provide the client with valid data
+
 ### example
 request:
 ```
