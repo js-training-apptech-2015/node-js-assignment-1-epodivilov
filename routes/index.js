@@ -53,7 +53,25 @@ module.exports = function (server) {
             uri: url + 'games',
             method: 'POST',
             json: true,
-            body: {type:0}
+            body: req.body
+        }, function (error, response, body) {
+            if (error) return (error);
+            res.send({
+                "server": url.match('\/\/([a-z0-9-]+)\.')[1],
+                "data": body
+            });
+        });
+    });
+
+    server.put('/games/:id', function (req, res, next) {
+        var url = currentServer.shift();
+        currentServer.push(url);
+
+        request({
+            uri: url + 'games/' + req.params.id,
+            method: 'PUT',
+            json: true,
+            body: req.body
         }, function (error, response, body) {
             if (error) return (error);
             res.send({
