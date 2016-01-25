@@ -1,0 +1,7 @@
+{
+  "servers": [
+    "https://rocky-sierra-3635.herokuapp.com/",
+    "https://polar-waters-8630.herokuapp.com/",
+    "https://aqueous-ocean-2864.herokuapp.com/"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "node-js-assignment-1-epodivilov",
+  "version": "0.1.0",
+  "description": "In on of the previous assignmests you had to implement a tic-tac-toe game [client](https://github.com/js-training-apptech-2015/splitmode).\r It had to work with one of the provided endpoints:\r ```\r https://rocky-sierra-3635.herokuapp.com/games\r https://polar-waters-8630.herokuapp.com/games\r https://aqueous-ocean-2864.herokuapp.com/games\r ```\r The servers are stateless and everytime provide the same answer for the same request.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-training-apptech-2015/node-js-assignment-1-epodivilov.git"
+  },
+  "author": "Evgeniy Podivilov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-training-apptech-2015/node-js-assignment-1-epodivilov/issues"
+  },
+  "homepage": "https://github.com/js-training-apptech-2015/node-js-assignment-1-epodivilov#readme",
+  "dependencies": {
+    "mongoose": "^4.3.7",
+    "request": "^2.67.0",
+    "restify": "^4.0.3"
+  }
+}
